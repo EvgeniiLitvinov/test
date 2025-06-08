@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хакатон | ГМК Норникель</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Хакатон «Индустрия Будущего»</h1>
+      <p>15 – 17 августа 2025 года · Москва</p>
+      <button class="cta-button" onclick="openModal()">Зарегистрироваться</button>
+    </div>
+  </section>
+
+  <section class="description" id="descriptionSection">
+    <h2>О хакатоне</h2>
+    <div class="decor-line"></div>
+    <div class="cards-container">
+      <div class="card">
+        <strong>О мероприятии</strong>
+        <p>«Индустрия Будущего» — это масштабное событие для молодых инженеров, разработчиков и аналитиков, организованное при поддержке ПАО «ГМК «Норильский никель».</p>
+      </div>
+      <div class="card">
+        <strong>Кто участвует</strong>
+        <p>Студенты технических вузов, специалисты по ИИ и компьютерному зрению, дизайнеры и инженеры с инновационным мышлением.</p>
+      </div>
+      <div class="card">
+        <strong>Цель</strong>
+        <p>Создание интеллектуальной системы визуального контроля за соблюдением технологических норм в производственных условиях.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="registrationModal" onclick="handleBackdropClick(event)">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <h3>Регистрация на хакатон</h3>
+      <input type="text" placeholder="Ваше имя" />
+      <input type="email" placeholder="Email" />
+      <button onclick="closeModal()">Отправить</button>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
